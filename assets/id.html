@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .full {
+            max-width: 400px;
+            width: 100%;
+            text-align: left;
+        }
+
+        div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="date"] {
+            width: calc(100% - 18px);
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+            margin-top: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="full">
+        <div>
+            <label for="username">Player Name</label>
+            <input type="text" name="username" id="username" maxlength="5" required>
+        </div>
+        
+        <div>
+            <label for="pwd">Password</label>
+            <input type="password" name="pwd" id="pwd" minlength="8" required>
+        </div>
+        
+        <div>
+            <label for="emailid">Email ID</label>
+            <input type="email" name="emailid" id="emailid" value="@gmail.com" maxlength="10">
+        </div>
+        
+        <div>
+            <label for="dateofbirth">Date Of Birth</label>
+            <input type="date" name="dateofbirth" id="dateofbirth" min="1990-01-01" max="2024-01-01" step="10">
+        </div>
+        
+        <div>
+            <input type="text" name="OTP pin" id="otp" placeholder="Enter OTP" required>
+        </div>
+        
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <label for="checkbox">Terms and Condition</label>
+            <input type="checkbox" name="checkbox" id="checkbox">
+        </div>
+    </div>
+</body>
+</html>
